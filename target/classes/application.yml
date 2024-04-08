@@ -1,0 +1,10 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: landing_formularios_registro_id
+          uri: http://localhost:8082/form/send
+          predicates:
+          - Path=/form/send
