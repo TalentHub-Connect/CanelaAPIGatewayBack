@@ -14,7 +14,19 @@ spring:
               - "*"
       routes:
         - id: landing_formularios_registro_id
-          uri: http://localhost:8082/form/send
+          uri: https://canelaaccounmanager.up.railway.app/form/send
           predicates:
           - Path=/form/send
+        - id: landing_formularios_buyer_info
+          uri: https://canelaaccounmanager.up.railway.app/payment/buyer
+          predicates:
+          - Path=/payment/buyer
+        - id: landing_formularios_card_info
+          uri: https://canelaaccounmanager.up.railway.app/payment/card
+          predicates:
+          - Path=/payment/card
+        - id: canela_platform_get_planes
+          uri: https://canelaplanbackend-production.up.railway.app/api/planes
+          predicates:
+          - Path=/api/planes
 
