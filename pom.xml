@@ -16,7 +16,6 @@
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-gateway</artifactId>
 		<version>4.1.2</version>
-		<relative.Path>..</relative.Path> <!-- lookup parent from repository -->
 	</parent>
 
 	<dependencies>
