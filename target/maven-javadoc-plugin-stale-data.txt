@@ -1,0 +1,127 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.4/spring-boot-starter-actuator-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.4/spring-boot-starter-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot/3.2.4/spring-boot-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/spring-context/6.1.5/spring-context-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/spring-aop/6.1.5/spring-aop-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/spring-expression/6.1.5/spring-expression-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.4/spring-boot-autoconfigure-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.4/spring-boot-starter-logging-3.2.4.jar;C:/Users/willi/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar;C:/Users/willi/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar;C:/Users/willi/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar;C:/Users/willi/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar;C:/Users/willi/.m2/repository/org/slf4j/jul-to-slf4j/2.0.12/jul-to-slf4j-2.0.12.jar;C:/Users/willi/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar;C:/Users/willi/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.4/spring-boot-actuator-autoconfigure-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.4/spring-boot-actuator-3.2.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.4/jackson-databind-2.15.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.4/jackson-annotations-2.15.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.4/jackson-core-2.15.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.4/jackson-datatype-jsr310-2.15.4.jar;C:/Users/willi/.m2/repository/io/micrometer/micrometer-observation/1.12.4/micrometer-observation-1.12.4.jar;C:/Users/willi/.m2/repository/io/micrometer/micrometer-commons/1.12.4/micrometer-commons-1.12.4.jar;C:/Users/willi/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.4/micrometer-jakarta9-1.12.4.jar;C:/Users/willi/.m2/repository/io/micrometer/micrometer-core/1.12.4/micrometer-core-1.12.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-webflux/3.2.4/spring-boot-starter-webflux-3.2.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.4/spring-boot-starter-json-3.2.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.4/jackson-datatype-jdk8-2.15.4.jar;C:/Users/willi/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.4/jackson-module-parameter-names-2.15.4.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-reactor-netty/3.2.4/spring-boot-starter-reactor-netty-3.2.4.jar;C:/Users/willi/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.1.17/reactor-netty-http-1.1.17.jar;C:/Users/willi/.m2/repository/io/netty/netty-codec-http/4.1.107.Final/netty-codec-http-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-common/4.1.107.Final/netty-common-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-buffer/4.1.107.Final/netty-buffer-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-transport/4.1.107.Final/netty-transport-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-codec/4.1.107.Final/netty-codec-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-handler/4.1.107.Final/netty-handler-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-codec-http2/4.1.107.Final/netty-codec-http2-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-resolver-dns/4.1.107.Final/netty-resolver-dns-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-resolver/4.1.107.Final/netty-resolver-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-codec-dns/4.1.107.Final/netty-codec-dns-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.107.Final/netty-resolver-dns-native-macos-4.1.107.Final-osx-x86_64.jar;C:/Users/willi/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.107.Final/netty-resolver-dns-classes-macos-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-transport-native-epoll/4.1.107.Final/netty-transport-native-epoll-4.1.107.Final-linux-x86_64.jar;C:/Users/willi/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.107.Final/netty-transport-native-unix-common-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.107.Final/netty-transport-classes-epoll-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.1.17/reactor-netty-core-1.1.17.jar;C:/Users/willi/.m2/repository/io/netty/netty-handler-proxy/4.1.107.Final/netty-handler-proxy-4.1.107.Final.jar;C:/Users/willi/.m2/repository/io/netty/netty-codec-socks/4.1.107.Final/netty-codec-socks-4.1.107.Final.jar;C:/Users/willi/.m2/repository/org/springframework/spring-web/6.1.5/spring-web-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/spring-beans/6.1.5/spring-beans-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/spring-webflux/6.1.5/spring-webflux-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/cloud/spring-cloud-starter-gateway/4.1.2/spring-cloud-starter-gateway-4.1.2.jar;C:/Users/willi/.m2/repository/org/springframework/cloud/spring-cloud-starter/4.1.2/spring-cloud-starter-4.1.2.jar;C:/Users/willi/.m2/repository/org/springframework/security/spring-security-rsa/1.1.2/spring-security-rsa-1.1.2.jar;C:/Users/willi/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.77/bcprov-jdk18on-1.77.jar;C:/Users/willi/.m2/repository/org/springframework/cloud/spring-cloud-gateway-server/4.1.2/spring-cloud-gateway-server-4.1.2.jar;C:/Users/willi/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.4/spring-boot-starter-validation-3.2.4.jar;C:/Users/willi/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.19/tomcat-embed-el-10.1.19.jar;C:/Users/willi/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar;C:/Users/willi/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar;C:/Users/willi/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar;C:/Users/willi/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar;C:/Users/willi/.m2/repository/org/isomorphism/token-bucket/1.7/token-bucket-1.7.jar;C:/Users/willi/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar;C:/Users/willi/.m2/repository/org/slf4j/slf4j-api/2.0.12/slf4j-api-2.0.12.jar;C:/Users/willi/.m2/repository/org/springframework/spring-core/6.1.5/spring-core-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/spring-jcl/6.1.5/spring-jcl-6.1.5.jar;C:/Users/willi/.m2/repository/org/springframework/cloud/spring-cloud-commons/4.1.2/spring-cloud-commons-4.1.2.jar;C:/Users/willi/.m2/repository/org/springframework/security/spring-security-crypto/6.2.3/spring-security-crypto-6.2.3.jar;C:/Users/willi/.m2/repository/org/springframework/cloud/spring-cloud-context/4.1.2/spring-cloud-context-4.1.2.jar;C:/Users/willi/.m2/repository/io/projectreactor/reactor-core/3.6.4/reactor-core-3.6.4.jar;C:/Users/willi/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar;C:/Users/willi/.m2/repository/io/projectreactor/addons/reactor-extra/3.5.1/reactor-extra-3.5.1.jar;C:/Users/willi/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.9.23/kotlin-stdlib-1.9.23.jar;C:/Users/willi/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar;C:/Users/willi/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.9.23/kotlin-reflect-1.9.23.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'8'
+-sourcepath
+'C:/Users/willi/Documents/Arquitectura/CanelaAPIGatewayBack/src/main/java;C:/Users/willi/Documents/Arquitectura/CanelaAPIGatewayBack/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2024 <a href="https://www.spring.io">Pivotal Software, Inc.</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/willi/Documents/Arquitectura/CanelaAPIGatewayBack/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'apigatewaycanela 0.0.1-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/willi/Documents/Arquitectura/CanelaAPIGatewayBack/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'apigatewaycanela 0.0.1-SNAPSHOT API'
+com.talenthub.apigatewaycanela
+'C:/Users/willi/Documents/Arquitectura/CanelaAPIGatewayBack/src/main/java/com/talenthub/apigatewaycanela/ApigatewaycanelaApplication.java'
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.4\spring-boot-starter-actuator-3.2.4.jar = 1712594720747
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar = 1712582661535
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar = 1712582662495
+C:\Users\willi\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar = 1712582661896
+C:\Users\willi\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar = 1712582661224
+C:\Users\willi\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar = 1712582661387
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar = 1712582662610
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar = 1712582661981
+C:\Users\willi\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar = 1712582662075
+C:\Users\willi\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar = 1712582662135
+C:\Users\willi\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar = 1712582662122
+C:\Users\willi\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar = 1712582662167
+C:\Users\willi\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar = 1712582662169
+C:\Users\willi\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar = 1675979046503
+C:\Users\willi\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar = 1712582662266
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.4\spring-boot-actuator-autoconfigure-3.2.4.jar = 1712594721638
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.4\spring-boot-actuator-3.2.4.jar = 1712594721669
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar = 1712582660299
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar = 1712582657988
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar = 1712582659615
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar = 1712582657978
+C:\Users\willi\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar = 1712582661362
+C:\Users\willi\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar = 1712582660940
+C:\Users\willi\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.4\micrometer-jakarta9-1.12.4.jar = 1712594721053
+C:\Users\willi\.m2\repository\io\micrometer\micrometer-core\1.12.4\micrometer-core-1.12.4.jar = 1712594721722
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-webflux\3.2.4\spring-boot-starter-webflux-3.2.4.jar = 1712594729886
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar = 1712582656973
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar = 1712582657229
+C:\Users\willi\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar = 1712582658302
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-reactor-netty\3.2.4\spring-boot-starter-reactor-netty-3.2.4.jar = 1712594721581
+C:\Users\willi\.m2\repository\io\projectreactor\netty\reactor-netty-http\1.1.17\reactor-netty-http-1.1.17.jar = 1712594721726
+C:\Users\willi\.m2\repository\io\netty\netty-codec-http\4.1.107.Final\netty-codec-http-4.1.107.Final.jar = 1712594726619
+C:\Users\willi\.m2\repository\io\netty\netty-common\4.1.107.Final\netty-common-4.1.107.Final.jar = 1712594726471
+C:\Users\willi\.m2\repository\io\netty\netty-buffer\4.1.107.Final\netty-buffer-4.1.107.Final.jar = 1712594726472
+C:\Users\willi\.m2\repository\io\netty\netty-transport\4.1.107.Final\netty-transport-4.1.107.Final.jar = 1712594726489
+C:\Users\willi\.m2\repository\io\netty\netty-codec\4.1.107.Final\netty-codec-4.1.107.Final.jar = 1712594726624
+C:\Users\willi\.m2\repository\io\netty\netty-handler\4.1.107.Final\netty-handler-4.1.107.Final.jar = 1712594726265
+C:\Users\willi\.m2\repository\io\netty\netty-codec-http2\4.1.107.Final\netty-codec-http2-4.1.107.Final.jar = 1712594722422
+C:\Users\willi\.m2\repository\io\netty\netty-resolver-dns\4.1.107.Final\netty-resolver-dns-4.1.107.Final.jar = 1712594726575
+C:\Users\willi\.m2\repository\io\netty\netty-resolver\4.1.107.Final\netty-resolver-4.1.107.Final.jar = 1712594722854
+C:\Users\willi\.m2\repository\io\netty\netty-codec-dns\4.1.107.Final\netty-codec-dns-4.1.107.Final.jar = 1712594724533
+C:\Users\willi\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.107.Final\netty-resolver-dns-native-macos-4.1.107.Final-osx-x86_64.jar = 1712594726523
+C:\Users\willi\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.107.Final\netty-resolver-dns-classes-macos-4.1.107.Final.jar = 1712594725678
+C:\Users\willi\.m2\repository\io\netty\netty-transport-native-epoll\4.1.107.Final\netty-transport-native-epoll-4.1.107.Final-linux-x86_64.jar = 1712594726585
+C:\Users\willi\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.107.Final\netty-transport-native-unix-common-4.1.107.Final.jar = 1712594726003
+C:\Users\willi\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.107.Final\netty-transport-classes-epoll-4.1.107.Final.jar = 1712594725902
+C:\Users\willi\.m2\repository\io\projectreactor\netty\reactor-netty-core\1.1.17\reactor-netty-core-1.1.17.jar = 1712594726229
+C:\Users\willi\.m2\repository\io\netty\netty-handler-proxy\4.1.107.Final\netty-handler-proxy-4.1.107.Final.jar = 1712594726068
+C:\Users\willi\.m2\repository\io\netty\netty-codec-socks\4.1.107.Final\netty-codec-socks-4.1.107.Final.jar = 1712594726301
+C:\Users\willi\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar = 1712582661808
+C:\Users\willi\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar = 1712582661343
+C:\Users\willi\.m2\repository\org\springframework\spring-webflux\6.1.5\spring-webflux-6.1.5.jar = 1712594729944
+C:\Users\willi\.m2\repository\org\springframework\cloud\spring-cloud-starter-gateway\4.1.2\spring-cloud-starter-gateway-4.1.2.jar = 1712594726949
+C:\Users\willi\.m2\repository\org\springframework\cloud\spring-cloud-starter\4.1.2\spring-cloud-starter-4.1.2.jar = 1712582656742
+C:\Users\willi\.m2\repository\org\springframework\security\spring-security-rsa\1.1.2\spring-security-rsa-1.1.2.jar = 1712582656774
+C:\Users\willi\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.77\bcprov-jdk18on-1.77.jar = 1712582660867
+C:\Users\willi\.m2\repository\org\springframework\cloud\spring-cloud-gateway-server\4.1.2\spring-cloud-gateway-server-4.1.2.jar = 1712594728972
+C:\Users\willi\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.4\spring-boot-starter-validation-3.2.4.jar = 1712582656806
+C:\Users\willi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar = 1712582660333
+C:\Users\willi\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar = 1712582657156
+C:\Users\willi\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar = 1677190339789
+C:\Users\willi\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar = 1697492407549
+C:\Users\willi\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar = 1712582656890
+C:\Users\willi\.m2\repository\org\isomorphism\token-bucket\1.7\token-bucket-1.7.jar = 1712594729917
+C:\Users\willi\.m2\repository\com\google\guava\guava\18.0\guava-18.0.jar = 1712594730792
+C:\Users\willi\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar = 1712582662511
+C:\Users\willi\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar = 1712582663218
+C:\Users\willi\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar = 1712582663034
+C:\Users\willi\.m2\repository\org\springframework\cloud\spring-cloud-commons\4.1.2\spring-cloud-commons-4.1.2.jar = 1712582656954
+C:\Users\willi\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar = 1712582656758
+C:\Users\willi\.m2\repository\org\springframework\cloud\spring-cloud-context\4.1.2\spring-cloud-context-4.1.2.jar = 1712582656763
+C:\Users\willi\.m2\repository\io\projectreactor\reactor-core\3.6.4\reactor-core-3.6.4.jar = 1712594734142
+C:\Users\willi\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar = 1684895036268
+C:\Users\willi\.m2\repository\io\projectreactor\addons\reactor-extra\3.5.1\reactor-extra-3.5.1.jar = 1712594732858
+C:\Users\willi\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.23\kotlin-stdlib-1.9.23.jar = 1712594734367
+C:\Users\willi\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar = 1712594733990
+C:\Users\willi\.m2\repository\org\jetbrains\kotlin\kotlin-reflect\1.9.23\kotlin-reflect-1.9.23.jar = 1712594734609
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\src\main\java = 1712582562365
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\generated-sources\annotations = 1712593806362
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\allclasses-index.html = 1713336087183
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\allpackages-index.html = 1713336087185
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\copy.svg = 1713336087224
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\element-list = 1713336087117
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\help-doc.html = 1713336087215
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\index-all.html = 1713336087203
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\index.html = 1713336087206
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\jquery-ui.overrides.css = 1713336087264
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\member-search-index.js = 1713336087192
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\module-search-index.js = 1713336087188
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\overview-tree.html = 1713336087164
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\package-search-index.js = 1713336087190
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\script.js = 1713336087222
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\search.js = 1713336087227
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\stylesheet.css = 1713336087220
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\tag-search-index.js = 1713336087194
+C:\Users\willi\Documents\Arquitectura\CanelaAPIGatewayBack\target\apidocs\type-search-index.js = 1713336087191
