@@ -22,13 +22,11 @@ spring:
         cors-configurations:
           '[/**]':
             allowed-origins:
-              - "http://localhost:4200"
+              - "*"
             allowed-methods:
               - "*"
             allowed-headers:
-              - POST
-              - GET
-              - OPTIONS
+              - "*"
       routes:
         - id: landing_formularios_registro_id
           uri: https://canelaaccounmanager.up.railway.app/form/send
