@@ -1,4 +1,5 @@
-
+server:
+  port: 8080
 eureka:
   instance:
     preferIpAddress: true
@@ -8,13 +9,12 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+
 spring:
+  application:
+    name: Api GateWay
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
       default-filters:
         - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       globalcors:
@@ -22,11 +22,13 @@ spring:
         cors-configurations:
           '[/**]':
             allowed-origins:
-              - "*"
+              - "http://localhost:4200"
             allowed-methods:
               - "*"
             allowed-headers:
-              - "*"
+              - POST
+              - GET
+              - OPTIONS
       routes:
         - id: landing_formularios_registro_id
           uri: https://canelaaccounmanager.up.railway.app/form/send
