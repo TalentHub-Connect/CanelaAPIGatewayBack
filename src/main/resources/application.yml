@@ -41,7 +41,7 @@ spring:
           predicates:
             - Path=/api/planes
         - id: canela_auth
-          uri: https://canelaauth-production.up.railway.app
+          uri: https://canelaauth-qa.up.railway.app
           predicates:
             - Path=/api/talentsoft/auth/**
         - id: canela_account_manager_microservice
