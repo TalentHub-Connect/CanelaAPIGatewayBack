@@ -36,15 +36,15 @@ spring:
               - OPTIONS
       routes:
         - id: landing_formularios_registro_id
-          uri: https://canelaaccounmanager.up.railway.app/form/send
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/form/send
           predicates:
           - Path=/form/send
         - id: landing_formularios_buyer_info
-          uri: https://canelaaccounmanager.up.railway.app/payment/buyer
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
           - Path=/payment/buyer
         - id: landing_formularios_card_info
-          uri: https://canelaaccounmanager.up.railway.app/payment/card
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/card
           predicates:
           - Path=/payment/card
         - id: canela_platform_get_planes
