@@ -25,7 +25,7 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowedOrigins: ${ALLOWED_ORIGINS:*} # With '*' we allow all origins. Adjust as necessary for production.
+            allowedOrigins: ${ALLOWED_ORIGINS:*}
             allowedHeaders: "*"
             allowedMethods:
               - GET
@@ -34,6 +34,7 @@ spring:
               - DELETE
               - PATCH
               - OPTIONS
+            allowCredentials: true
       routes:
         - id: canela_plan_backend
           uri: https://canelaplanbackend-qa.up.railway.app
@@ -48,15 +49,15 @@ spring:
           predicates:
             - Path=/accountmanager/**
         - id: landing_formularios_registro_id
-          uri: https://canelaaccounmanager.up.railway.app/form/send
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/form/send
           predicates:
             - Path=/form/send
         - id: landing_formularios_buyer_info
-          uri: https://canelaaccounmanager.up.railway.app/payment/buyer
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
             - Path=/payment/buyer
         - id: landing_formularios_card_info
-          uri: https://canelaaccounmanager.up.railway.app/payment/card
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/card
           predicates:
             - Path=/payment/card
 
@@ -69,3 +70,9 @@ management:
       exposure:
         include:
           - '*'
+logging:
+  level:
+    root: INFO  # Cambia a DEBUG para una salida más detallada en el ambiente de desarrollo
+    org.springframework.cloud.gateway: DEBUG  # Logging específico para Spring Cloud Gateway
+    org.springframework.web: DEBUG  # Para ver detalles de las peticiones web y respuestas
+    org.springframework.security: INFO  # Si utilizas Spring Security
