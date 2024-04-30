@@ -43,6 +43,10 @@ spring:
           uri: https://canelaauth-production.up.railway.app
           predicates:
             - Path=/api/talentsoft/auth/**
+        - id: canela_roles
+          uri: https://canelaauth-production.up.railway.app
+          predicates:
+              - Path=/api/talentsoft/roles/**
         - id: canela_account_manager_microservice
           uri: https://canelaaccountmanagermicroservice-production.up.railway.app
           predicates:
