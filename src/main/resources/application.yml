@@ -34,7 +34,6 @@ spring:
               - DELETE
               - PATCH
               - OPTIONS
-            allowCredentials: true
       routes:
         - id: canela_plan_backend
           uri: https://canelaplanbackend-production.up.railway.app
