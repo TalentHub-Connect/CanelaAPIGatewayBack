@@ -1,10 +1,10 @@
 server:
   port: 8762
+
 eureka:
   instance:
     preferIpAddress: true
     hostname: ${HOSTNAME:localhost}
-
   client:
     registerWithEureka: true
     fetchRegistry: true
@@ -25,7 +25,7 @@ spring:
       globalcors:
         cors-configurations:
           '[/**]':
-            allowedOrigins: ${ALLOWED_ORIGINS:*} # With '*' we allow all origins. We can restrict by indicating domains or ip + port, e.g. http://localhost:3000 (where our front is, or a Vercel domain)
+            allowedOrigins: ${ALLOWED_ORIGINS:*} # With '*' we allow all origins. Adjust as necessary for production.
             allowedHeaders: "*"
             allowedMethods:
               - GET
@@ -35,22 +35,31 @@ spring:
               - PATCH
               - OPTIONS
       routes:
+        - id: canela_plan_backend
+          uri: https://canelaplanbackend-qa.up.railway.app
+          predicates:
+            - Path=/api/planes
+        - id: canela_auth
+          uri: https://canelaauth-qa.up.railway.app
+          predicates:
+            - Path=/auth/**
+        - id: canela_account_manager_microservice
+          uri: https://canelaaccountmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/accountmanager/**
         - id: landing_formularios_registro_id
           uri: https://canelaaccounmanager.up.railway.app/form/send
           predicates:
-          - Path=/form/send
+            - Path=/form/send
         - id: landing_formularios_buyer_info
           uri: https://canelaaccounmanager.up.railway.app/payment/buyer
           predicates:
-          - Path=/payment/buyer
+            - Path=/payment/buyer
         - id: landing_formularios_card_info
           uri: https://canelaaccounmanager.up.railway.app/payment/card
           predicates:
-          - Path=/payment/card
-        - id: canela_platform_get_planes
-          uri: https://canelaplanbackend-production.up.railway.app/api/planes
-          predicates:
-          - Path=/api/planes
+            - Path=/payment/card
+
 management:
   endpoint:
     gateway:
