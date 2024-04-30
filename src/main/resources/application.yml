@@ -34,16 +34,19 @@ spring:
               - DELETE
               - PATCH
               - OPTIONS
-            allowCredentials: true
       routes:
         - id: canela_plan_backend
           uri: https://canelaplanbackend-qa.up.railway.app
           predicates:
             - Path=/api/planes
         - id: canela_auth
-          uri: https://canelaauth-qa.up.railway.app
+          uri: https://canelaauth-qa.up.railway.app/
           predicates:
             - Path=/api/talentsoft/auth/**
+        - id: canela_roles
+          uri: https://canelaauth-qa.up.railway.app/
+          predicates:
+            - Path=/api/talentsoft/roles/**
         - id: canela_account_manager_microservice
           uri: https://canelaaccountmanagermicroservice-qa.up.railway.app
           predicates:
