@@ -36,33 +36,37 @@ spring:
               - OPTIONS
       routes:
         - id: canela_plan_backend
-          uri: https://canelaplanbackend-production.up.railway.app
+          uri: https://canelaplanbackend-qa.up.railway.app
           predicates:
             - Path=/api/planes
         - id: canela_auth
-          uri: https://canelaauth-production.up.railway.app
+          uri: https://canelaauth-qa.up.railway.app/
           predicates:
             - Path=/api/talentsoft/auth/**
         - id: canela_roles
-          uri: https://canelaauth-production.up.railway.app
+          uri: https://canelaauth-qa.up.railway.app/
           predicates:
-              - Path=/api/talentsoft/roles/**
+            - Path=/api/talentsoft/roles/**
         - id: canela_account_manager_microservice
-          uri: https://canelaaccountmanagermicroservice-production.up.railway.app
+          uri: https://canelaaccountmanagermicroservice-qa.up.railway.app
           predicates:
             - Path=/accountmanager/**
         - id: landing_formularios_registro_id
-          uri: https://canelaaccounmanagermicroservice-production.up.railway.app/form/send
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/form/send
           predicates:
             - Path=/form/send
         - id: landing_formularios_buyer_info
-          uri: https://canelaaccounmanagermicroservice-production.up.railway.app/payment/buyer
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
             - Path=/payment/buyer
         - id: landing_formularios_card_info
-          uri: https://canelaaccounmanagermicroservice-production.up.railway.app/payment/card
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/card
           predicates:
             - Path=/payment/card
+        - id: modulo_cuentas_facturation
+          uri: https://modulocuentasfacturation-qa.up.railway.app
+          predicates:
+            - Path=/facturations/**
 
 management:
   endpoint:
