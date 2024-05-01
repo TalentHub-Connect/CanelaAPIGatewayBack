@@ -63,6 +63,10 @@ spring:
           uri: https://canelaaccounmanagermicroservice-production.up.railway.app/payment/card
           predicates:
             - Path=/payment/card
+        - id: modulo_cuentas_facturation
+          uri: modulocuentasfacturation-qa.up.railway.app
+          predicates:
+            - Path=/facturations/**
 
 management:
   endpoint:
