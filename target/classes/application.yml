@@ -75,6 +75,10 @@ spring:
           uri: modulocuentasplan-qa.up.railway.app
           predicates:
             - Path=/plans/**
+        - id: modulo_cuentas_coupon
+          uri: modulocuentascoupon-qa.up.railway.app
+          predicates:
+            - Path=/coupons/**
 
 management:
   endpoint:
