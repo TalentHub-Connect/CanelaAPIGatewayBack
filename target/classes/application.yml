@@ -71,6 +71,10 @@ spring:
           uri: modulocuentasservicios-qa.up.railway.app
           predicates:
             - Path=/services/**
+         - id: modulo_cuentas_plan
+          uri: modulocuentasplan-qa.up.railway.app
+          predicates:
+            - Path=/plans/**
 
 management:
   endpoint:
