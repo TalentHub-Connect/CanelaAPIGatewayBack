@@ -79,6 +79,10 @@ spring:
           uri: modulocuentascoupon-qa.up.railway.app
           predicates:
             - Path=/coupons/**
+        - id: editar_user_canela
+          uri: editarperfilcanela-qa.up.railway.app
+          predicates:
+            - Path=/canelauser/**
 
 management:
   endpoint:
