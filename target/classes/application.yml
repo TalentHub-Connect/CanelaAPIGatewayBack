@@ -36,9 +36,9 @@ spring:
               - OPTIONS
       routes:
         - id: canela_plan_backend
-          uri: https://canelaplanbackend-qa.up.railway.app
+          uri: https://modulocuentasplan-qa.up.railway.app
           predicates:
-            - Path=/api/planes
+            - Path=/plans/**
         - id: canela_auth
           uri: https://canelaauth-qa.up.railway.app/
           predicates:
@@ -63,26 +63,6 @@ spring:
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/card
           predicates:
             - Path=/payment/card
-        - id: modulo_cuentas_facturation
-          uri: modulocuentasfacturation-qa.up.railway.app
-          predicates:
-            - Path=/facturations/**
-        - id: modulo_cuentas_servicios
-          uri: modulocuentasservicios-qa.up.railway.app
-          predicates:
-            - Path=/services/**
-         - id: modulo_cuentas_plan
-          uri: modulocuentasplan-qa.up.railway.app
-          predicates:
-            - Path=/plans/**
-        - id: modulo_cuentas_coupon
-          uri: modulocuentascoupon-qa.up.railway.app
-          predicates:
-            - Path=/coupons/**
-        - id: editar_user_canela
-          uri: editarperfilcanela-qa.up.railway.app
-          predicates:
-            - Path=/canelauser/**
 
 management:
   endpoint:
