@@ -36,6 +36,10 @@ spring:
               - OPTIONS
       routes:
         - id: canela_plan_backend
+          uri: https://modulocuentascoupon-qa.up.railway.app/
+          predicates:
+            - Path=/coupons/**
+       - id: canela_plan_backend
           uri: https://modulocuentasplan-qa.up.railway.app/
           predicates:
             - Path=/plans/**
