@@ -35,7 +35,7 @@ spring:
               - PATCH
               - OPTIONS
       routes:
-        - id: canela_plan_backend
+        - id: canela_coupons
           uri: https://modulocuentascoupon-qa.up.railway.app/
           predicates:
             - Path=/coupons/**
