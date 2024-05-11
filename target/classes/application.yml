@@ -43,6 +43,10 @@ spring:
           uri: https://modulocuentasplan-qa.up.railway.app/
           predicates:
             - Path=/plans/**
+      - id: canela_plan_backend
+          uri: https://talentsoftdespidos-qa.up.railway.app/
+          predicates:
+            - Path=/reasons/**
         - id: canela_auth
           uri: https://canelaauth-qa.up.railway.app/
           predicates:
