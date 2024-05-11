@@ -67,6 +67,14 @@ spring:
           uri: http://localhost:8080/possibleclient/saveAll
           predicates:
             - Path=/possibleclient/saveAll
+        - id: canela_save_new_marketing_status
+          uri: http://localhost:8080/marketingstatus/save
+          predicates:
+            - Path=/marketingstatus/save
+        - id: canela_delete_marketing_status
+          uri: http://localhost:8080/marketingstatus/delete/**
+          predicates:
+            - Path=/marketingstatus/delete/**
         - id: landing_obtener_planes
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/plan/list
           predicates:
