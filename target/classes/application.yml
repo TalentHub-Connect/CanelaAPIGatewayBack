@@ -52,9 +52,13 @@ spring:
           predicates:
             - Path=/accountmanager/**
         - id: landing_formularios_registro_id
-          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/form/send
+          uri: http://localhost:8080/form/send
           predicates:
             - Path=/form/send
+        - id: landing_obtener_planes
+          uri: http://localhost:8082/plan/list
+          predicates:
+            - Path=/plan/list
         - id: landing_formularios_buyer_info
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
