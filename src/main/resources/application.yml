@@ -56,23 +56,23 @@ spring:
           predicates:
             - Path=/possibleclient/send
         - id: canela_get_possible_clients
-          uri: http://localhost:8080/possibleclient/list
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/possibleclient/list
           predicates:
             - Path=/possibleclient/list
         - id: canela_get_existing_marketing_statuses
-          uri: http://localhost:8080/marketingstatus/list
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/list
           predicates:
             - Path=/marketingstatus/list
         - id: canela_save_possible_client_status_changes
-          uri: http://localhost:8080/possibleclient/saveAll
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/possibleclient/saveAll
           predicates:
             - Path=/possibleclient/saveAll
         - id: canela_save_new_marketing_status
-          uri: http://localhost:8080/marketingstatus/save
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/save
           predicates:
             - Path=/marketingstatus/save
         - id: canela_delete_marketing_status
-          uri: http://localhost:8080/marketingstatus/delete/**
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/delete/**
           predicates:
             - Path=/marketingstatus/delete/**
         - id: landing_obtener_planes
