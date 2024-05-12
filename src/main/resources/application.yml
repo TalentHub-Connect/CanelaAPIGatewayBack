@@ -79,6 +79,14 @@ spring:
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/plan/list
           predicates:
             - Path=/plan/list
+        - id: landing_create_user
+          uri: http://localhost:8083/user/save
+          predicates:
+            - Path=/user/save
+        - id: landing_create_company
+          uri: http://localhost:8082/company/save
+          predicates:
+            - Path=/company/save
         - id: landing_formularios_buyer_info
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
