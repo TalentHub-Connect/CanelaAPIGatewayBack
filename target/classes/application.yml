@@ -35,18 +35,10 @@ spring:
               - PATCH
               - OPTIONS
       routes:
-        - id: canela_coupons
-          uri: https://modulocuentascoupon-qa.up.railway.app/
-          predicates:
-            - Path=/coupons/**
-       - id: canela_plan_backend
-          uri: https://modulocuentasplan-qa.up.railway.app/
+        - id: canela_plan_backend
+          uri: https://modulocuentasplan-qa.up.railway.app
           predicates:
             - Path=/plans/**
-      - id: canela_plan_backend
-          uri: https://talentsoftdespidos-qa.up.railway.app/
-          predicates:
-            - Path=/reasons/**
         - id: canela_auth
           uri: https://canelaauth-qa.up.railway.app/
           predicates:
@@ -88,11 +80,11 @@ spring:
           predicates:
             - Path=/plan/list
         - id: landing_create_user
-          uri: http://localhost:8083/user/save
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/save
           predicates:
             - Path=/user/save
         - id: landing_create_company
-          uri: http://localhost:8082/company/save
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/save
           predicates:
             - Path=/company/save
         - id: landing_formularios_buyer_info
@@ -107,6 +99,10 @@ spring:
           uri: https://modulocuentasfacturation-qa.up.railway.app
           predicates:
             - Path=/facturations/**
+        - id: modulo_cuentas_subscripciones
+          uri: https://modulocuentassubscripciones-qa.up.railway.app
+          predicates:
+            - Path=/subscriptions/**
 
 management:
   endpoint:
