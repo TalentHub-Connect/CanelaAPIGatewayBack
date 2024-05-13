@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/possibleclient/saveAll
         - id: canela_save_new_marketing_status
-          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/save
+          uri: http://localhost:8084/marketingstatus/save
           predicates:
             - Path=/marketingstatus/save
         - id: canela_delete_marketing_status
@@ -119,7 +119,6 @@ spring:
           uri: https://modulocuentassubscripciones-qa.up.railway.app
           predicates:
             - Path=/subscriptions/**
-
 
 management:
   endpoint:
