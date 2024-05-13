@@ -35,18 +35,10 @@ spring:
               - PATCH
               - OPTIONS
       routes:
-        - id: canela_coupons
-          uri: https://modulocuentascoupon-qa.up.railway.app/
-          predicates:
-            - Path=/coupons/**
-       - id: canela_plan_backend
-          uri: https://modulocuentasplan-qa.up.railway.app/
+        - id: canela_plan_backend
+          uri: https://modulocuentasplan-qa.up.railway.app
           predicates:
             - Path=/plans/**
-      - id: canela_plan_backend
-          uri: https://talentsoftdespidos-qa.up.railway.app/
-          predicates:
-            - Path=/reasons/**
         - id: canela_auth
           uri: https://canelaauth-qa.up.railway.app/
           predicates:
@@ -88,7 +80,7 @@ spring:
           predicates:
             - Path=/plan/list
         - id: landing_create_user
-          uri: http://localhost:8083/user/save
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/save
           predicates:
             - Path=/user/save
         - id: landing_create_company
@@ -96,11 +88,11 @@ spring:
           predicates:
             - Path=/company/save
         - id: canela_platfotm_get_all_users_with_roles
-          uri: http://localhost:8083/user/find_all_with_roles
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/find_all_with_roles
           predicates:
             - Path=/user/find_all_with_roles
         - id: canela_platfotm_save_all_users_with_roles
-          uri: http://localhost:8083/rol/update_all_users_roles
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/rol/update_all_users_roles
           predicates:
             - Path=/rol/update_all_users_roles
         - id: landing_formularios_buyer_info
@@ -116,9 +108,17 @@ spring:
           predicates:
             - Path=/facturations/**
         - id: canela_platfotm_get_all_companies
-          uri: http://localhost:8082/company/list
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/list
           predicates:
             - Path=/company/list
+        - id: canela_platform_account_manager_save_card
+          uri: http://localhost:8082/card/save
+          predicates:
+            - Path=/card/save
+        - id: modulo_cuentas_subscripciones
+          uri: https://modulocuentassubscripciones-qa.up.railway.app
+          predicates:
+            - Path=/subscriptions/**
 
 management:
   endpoint:
