@@ -87,6 +87,14 @@ spring:
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/save
           predicates:
             - Path=/company/save
+        - id: canela_platfotm_get_all_users_with_roles
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/find_all_with_roles
+          predicates:
+            - Path=/user/find_all_with_roles
+        - id: canela_platfotm_save_all_users_with_roles
+          uri: https://canelausermanagementmicroservice-qa.up.railway.app/rol/update_all_users_roles
+          predicates:
+            - Path=/rol/update_all_users_roles
         - id: landing_formularios_buyer_info
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
@@ -99,10 +107,19 @@ spring:
           uri: https://modulocuentasfacturation-qa.up.railway.app
           predicates:
             - Path=/facturations/**
+        - id: canela_platfotm_get_all_companies
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/list
+          predicates:
+            - Path=/company/list
+        - id: canela_platform_account_manager_save_card
+          uri: http://localhost:8082/card/save
+          predicates:
+            - Path=/card/save
         - id: modulo_cuentas_subscripciones
           uri: https://modulocuentassubscripciones-qa.up.railway.app
           predicates:
             - Path=/subscriptions/**
+
 
 management:
   endpoint:
