@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/possibleclient/saveAll
         - id: canela_save_new_marketing_status
-          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/save
+          uri: http://localhost:8084/marketingstatus/save
           predicates:
             - Path=/marketingstatus/save
         - id: canela_delete_marketing_status
@@ -84,9 +84,17 @@ spring:
           predicates:
             - Path=/user/save
         - id: landing_create_company
-          uri: http://localhost:8082/company/save
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/save
           predicates:
             - Path=/company/save
+        - id: canela_platfotm_get_all_users_with_roles
+          uri: http://localhost:8083/user/find_all_with_roles
+          predicates:
+            - Path=/user/find_all_with_roles
+        - id: canela_platfotm_save_all_users_with_roles
+          uri: http://localhost:8083/rol/update_all_users_roles
+          predicates:
+            - Path=/rol/update_all_users_roles
         - id: landing_formularios_buyer_info
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/payment/buyer
           predicates:
@@ -99,6 +107,10 @@ spring:
           uri: https://modulocuentasfacturation-qa.up.railway.app
           predicates:
             - Path=/facturations/**
+        - id: canela_platfotm_get_all_companies
+          uri: http://localhost:8082/company/list
+          predicates:
+            - Path=/company/list
 
 management:
   endpoint:
