@@ -36,9 +36,9 @@ spring:
               - OPTIONS
       routes:
         - id: canela_plan_backend
-          uri: https://canelaplanbackend-qa.up.railway.app
+          uri: https://modulocuentasplan-qa.up.railway.app
           predicates:
-            - Path=/api/planes
+            - Path=/plans/**
         - id: canela_auth
           uri: https://canelaauth-qa.up.railway.app/
           predicates:
