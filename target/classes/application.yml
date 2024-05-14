@@ -112,7 +112,7 @@ spring:
           predicates:
             - Path=/company/list
         - id: canela_platform_account_manager_save_card
-          uri: http://localhost:8082/card/save
+          uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
         - id: modulo_cuentas_subscripciones
