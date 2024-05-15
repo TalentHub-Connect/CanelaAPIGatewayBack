@@ -119,6 +119,10 @@ spring:
           uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
+        - id: talent_soft_despidos
+          uri: https://talentsoftdespidos-qa.up.railway.app
+          predicates:
+            - Path=/reasons/**
 
 
 management:
