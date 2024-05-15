@@ -68,7 +68,7 @@ spring:
           predicates:
             - Path=/possibleclient/saveAll
         - id: canela_save_new_marketing_status
-          uri: http://localhost:8084/marketingstatus/save
+          uri: https://canelamarketingmicroservice-qa.up.railway.app/marketingstatus/save
           predicates:
             - Path=/marketingstatus/save
         - id: canela_delete_marketing_status
@@ -76,7 +76,7 @@ spring:
           predicates:
             - Path=/marketingstatus/delete/**
         - id: landing_obtener_planes
-          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/plan/list
+          uri: https://canelaaccountmanagermicroservice-qa.up.railway.app/plan/list
           predicates:
             - Path=/plan/list
         - id: landing_create_user
@@ -84,9 +84,9 @@ spring:
           predicates:
             - Path=/user/save
         - id: landing_create_company
-          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/save
+          uri: http://localhost:8082/api/talentsoft/company/save
           predicates:
-            - Path=/company/save
+            - Path=/api/talentsoft/company/save
         - id: canela_platfotm_get_all_users_with_roles
           uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/find_all_with_roles
           predicates:
@@ -108,17 +108,14 @@ spring:
           predicates:
             - Path=/facturations/**
         - id: canela_platfotm_get_all_companies
-          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/list
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/api/talentsoft/company/list
           predicates:
-            - Path=/company/list
+            - Path=/api/talentsoft/company/list
         - id: canela_platform_account_manager_save_card
-          uri: http://localhost:8082/card/save
+          uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
-        - id: modulo_cuentas_subscripciones
-          uri: https://modulocuentassubscripciones-qa.up.railway.app
-          predicates:
-            - Path=/subscriptions/**
+
 
 management:
   endpoint:
