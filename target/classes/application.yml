@@ -108,7 +108,7 @@ spring:
           predicates:
             - Path=/facturations/**
         - id: modulo_servicios
-          uri: https://modulocuentasfacturation-qa.up.railway.app
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
           predicates:
             - Path=/services/**
         - id: canela_platfotm_get_all_companies
