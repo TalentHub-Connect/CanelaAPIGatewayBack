@@ -80,7 +80,7 @@ spring:
           predicates:
             - Path=/plan/list
         - id: landing_create_user
-          uri: https://canelausermanagementmicroservice-qa.up.railway.app/user/save
+          uri: http://localhost:8083/user/save
           predicates:
             - Path=/user/save
         - id: landing_create_company
@@ -107,6 +107,10 @@ spring:
           uri: https://modulocuentasfacturation-qa.up.railway.app
           predicates:
             - Path=/facturations/**
+        - id: modulo_servicios
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/services/**
         - id: canela_platfotm_get_all_companies
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/company/list
           predicates:
@@ -115,10 +119,11 @@ spring:
           uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
-        - id: modulo_cuentas_subscripciones
-          uri: https://modulocuentassubscripciones-qa.up.railway.app
+        - id: talent_soft_despidos
+          uri: https://talentsoftdespidos-qa.up.railway.app
           predicates:
-            - Path=/subscriptions/**
+            - Path=/reasons/**
+
 
 management:
   endpoint:
