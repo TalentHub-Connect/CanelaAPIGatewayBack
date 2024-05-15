@@ -116,6 +116,7 @@ spring:
           predicates:
             - Path=/card/save
 
+
 management:
   endpoint:
     gateway:
