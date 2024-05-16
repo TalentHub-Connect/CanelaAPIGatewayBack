@@ -112,7 +112,7 @@ spring:
           predicates:
             - Path=/api/talentsoft/company/list
         - id: canela_platform_account_manager_save_card
-          uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
 
