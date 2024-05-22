@@ -115,6 +115,22 @@ spring:
           uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
+        - id: canela_card
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/card/**
+        - id: canela_coupon
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/coupon/**
+        - id: canela_facturation
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/facturation/**
+         - id: canela_plan
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/plan/**
+          predicates:
+            - Path=/plan/**
 
 
 management:

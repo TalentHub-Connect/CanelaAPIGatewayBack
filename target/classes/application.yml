@@ -84,7 +84,7 @@ spring:
           predicates:
             - Path=/user/save
         - id: landing_create_company
-          uri: http://localhost:8082/api/talentsoft/company/save
+          uri: https://canelaaccountmanagermicroservice-qa.up.railway.app/api/talentsoft/company/save
           predicates:
             - Path=/api/talentsoft/company/save
         - id: canela_platfotm_get_all_users_with_roles
@@ -112,9 +112,25 @@ spring:
           predicates:
             - Path=/api/talentsoft/company/list
         - id: canela_platform_account_manager_save_card
-          uri: s://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/card/save
           predicates:
             - Path=/card/save
+        - id: canela_card
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/card/**
+        - id: canela_coupon
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/coupon/**
+        - id: canela_facturation
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app
+          predicates:
+            - Path=/facturation/**
+         - id: canela_plan
+          uri: https://canelaaccounmanagermicroservice-qa.up.railway.app/plan/**
+          predicates:
+            - Path=/plan/**
 
 
 management:
